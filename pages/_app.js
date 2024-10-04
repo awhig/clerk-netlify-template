@@ -5,7 +5,7 @@ import Header from '../components/Header'
 
 const MyApp = ({ Component, pageProps }) => {
   return (
-    <ClerkProvider {...pageProps} publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}>
+    <ClerkProvider publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}>
       <div className="bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500">
         <Head>
           <title>Clerk + Netlify Starter</title>
